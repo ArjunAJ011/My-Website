@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty Pets - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<header>
+    <div class="navbar container">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Nifty Pets Logo"></a>
+            <h1>NIFTY PETS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="adoption.html">ADOPTION</a></li>
+                <li><a href="sales.html">SALES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="#" class="cart-btn" onclick="openCart()"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <video autoplay muted loop id="hero-video">
+        <source src="assets/videos/pets.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <div class="hero-text">
+            <h2>NIFTY PETS</h2>
+            <p class="tagline">Your Next Best Friend Is Just a Click Away!</p>
+            <div class="cta-buttons">
+                <a href="sales.html" class="btn shop-btn">Shop Now</a>
+                <a href="adoption.html" class="btn adopt-btn">Adopt Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>At Nifty Pets, we believe every pet deserves a loving home. Whether you're looking to adopt a furry friend or shop for high-quality pet products, we're here to make your journey joyful and easy.</p>
+            <a href="about.html" class="btn learn-more">Learn More</a>
+        </div>
+        <div class="about-image">
+            <img src="assets/images/catdog1.jpg" alt="Happy dog and cat together">
+        </div>
+    </div>
+</section>
+
+<!-- Featured Pets -->
+<section class="featured-pets">
+    <div class="container">
+        <h2>Pets Looking for Homes</h2>
+        <div class="pet-carousel">
+            <div class="pet-grid" id="featured-pets">
+                <!-- Pets will load here -->
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous pets"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" aria-label="Next pets"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Donation Section -->
+<section class="donation-section">
+    <div class="container">
+        <div class="donation-image">
+            <img src="assets/images/catdog2.jpg" alt="Cat and dog together">
+        </div>
+        <div class="donation-content">
+            <h2>Support Our Cause</h2>
+            <p>Your donation helps us provide food, shelter, medical care, and love to pets in need.</p>
+            <div class="donation-options">
+                <button class="amount-btn" onclick="selectAmount(10)" aria-label="Donate $10">$10</button>
+                <button class="amount-btn" onclick="selectAmount(25)" aria-label="Donate $25">$25</button>
+                <button class="amount-btn" onclick="selectAmount(50)" aria-label="Donate $50">$50</button>
+                <button class="amount-btn" onclick="selectAmount(100)" aria-label="Donate $100">$100</button>
+                <input type="number" id="custom-amount" placeholder="Other amount" oninput="setCustomAmount(this.value)" aria-label="Custom donation amount">
+                <button class="btn donate-btn" onclick="handleDonation()" aria-label="Donate now">Donate Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <h2>Happy Pet Owners</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+                <p>"Nifty Pets helped me find the perfect companion. The adoption process was smooth and their support was amazing!"</p>
+                <div class="client">
+                    <img src="assets/images/client1.png" alt="Client John D.">
+                    <span>John D.</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+                <p>"My new puppy from Nifty Pets has brought so much joy to our family. The staff was incredibly helpful throughout the process."</p>
+                <div class="client">
+                    <img src="assets/images/client2.png" alt="Client Sarah M.">
+                    <span>Sarah M.</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                </div>
+                <p>"After adopting two cats from Nifty Pets, I can confidently say they're the best pet adoption center in town!"</p>
+                <div class="client">
+                    <img src="assets/images/client3.jpg" alt="Client Michael T.">
+                    <span>Michael T.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bg-text">NIFTY PETS</div>
+    <div class="footer-container container">
+        <div class="footer-col">
+            <img src="assets/images/logo.png" alt="Nifty Pets Logo" class="footer-logo">
+            <p>Connecting loving homes with pets in need since 2025.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/AJ Arjun" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/arjunam_38" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/@AJArjun26559680" aria-label="x" target="_blank"><i class="fab fa-x"></i></a>
+                <a href="https://www.youtube.com/@arjunaj-e7l" aria-label="youtube" target="_blank"><i class="fab fa-youtube"></i></a>    
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoption.html">Adoption Process</a></li>
+                <li><a href="sales.html">Available Pets</a></li>
+                <li><a href="about.html">Our Story</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> 
+                    <a href="https://www.google.com/maps?q=123+Pet+Street,+Animal+City" target="_blank">
+                        123 Pet Street, Animal City
+                    </a>
+                </li>
+                <li><i class="fas fa-phone"></i> 
+                    <a href="tel:+11234567890">(123) 456-7890</a>
+                </li>
+                <li><i class="fas fa-envelope"></i> 
+                    <a href="mailto:info@niftypets.com">info@niftypets.com</a>
+                </li>
+                <li><i class="fas fa-clock"></i> Mon-Sat: 9AM - 6PM</li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Nifty Pets. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Shopping Cart Modal -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn checkout-btn" onclick="checkout()" aria-label="Proceed to checkout">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+
+<!-- Adoption Form Modal -->
+<div id="adoption-modal" class="modal">
+    <div class="modal-content adoption-modal-content">
+        <div class="modal-header">
+            <div class="adoption-header-info">
+                    <h2 class="modal-title">Adoption Form</h2>
+                    <p class="pet-modal-breed" id="pet-breed-display"></p>
+            </div>
+            <button class="close-btn" onclick="closeAdoptionForm()" aria-label="Close adoption form">&times;</button>
+        </div>
+
+        <form id="adoption-form" onsubmit="submitAdoptionForm(event)">
+            <div class="form-content">
+                <input type="hidden" id="pet-id">
+
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicant-name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-input" id="applicant-name" required aria-required="true" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-email" class="form-label">Email *</label>
+                            <input type="email" class="form-input" id="applicant-email" required aria-required="true" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicant-phone" class="form-label">Phone *</label>
+                            <input type="tel" class="form-input" id="applicant-phone" required aria-required="true" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-age" class="form-label">Age</label>
+                            <input type="number" class="form-input" id="applicant-age" min="18" max="100" placeholder="Enter your age">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicant-address" class="form-label">Address *</label>
+                        <textarea class="form-textarea" id="applicant-address" required aria-required="true" rows="3" placeholder="Enter your address"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeAdoptionForm()" aria-label="Cancel adoption form">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-submit" aria-label="Submit adoption form">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit Application
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Donation Form Modal -->
+<div id="donation-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title">Complete Your Donation</h2>
+            <button class="close-btn" onclick="closeDonationModal()" aria-label="Close donation form">&times;</button>
+        </div>
+        <form id="donation-form" onsubmit="processDonation(event)">
+            <div class="form-group">
+                <label for="card-number">Card Number *</label>
+                <input type="text" id="card-number" class="form-input" placeholder="1234 5678 9012 3456" required aria-required="true">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="exp-date">Expiration Date *</label>
+                    <input type="text" id="exp-date" class="form-input" placeholder="MM/YY" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV *</label>
+                    <input type="text" id="cvv" class="form-input" placeholder="123" required aria-required="true">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Name on Card *</label>
+                <input type="text" id="card-name" class="form-input" placeholder="John Doe" required aria-required="true">
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="closeDonationModal()" aria-label="Cancel donation">Cancel</button>
+                <button type="submit" class="btn btn-primary" aria-label="Complete donation">Donate Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Chatty Dog Element -->
+<div class="chatty-dog">
+    <div class="dog-speech-bubble">
+        <p class="dog-message">Hi there! Looking for a new furry friend? I can help! 🐾</p>
+    </div>
+    <img src="assets/images/peeking-dog.png" alt="Cute dog peeking" class="dog-image" onclick="toggleDogMessage()">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

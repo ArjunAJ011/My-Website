@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Sales - Nifty Pets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<header>
+    <div class="navbar container">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Nifty Pets Logo"></a>
+            <h1>NIFTY PETS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="adoption.html">ADOPTION</a></li>
+                <li><a href="sales.html"  class="active">SALES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="#" class="cart-btn" onclick="openCart()"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h2 class="page-title">
+            <i class="fas fa-store"></i>
+            Pet Store
+        </h2>
+        <p class="page-subtitle">Find your perfect pet companion from certified breeders</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="main-content">
+    <div class="container">
+        <!-- Search and Filters -->
+        <div class="filters-section">
+            <div class="search-container">
+                <input type="text" class="search-box" aria-label="search-box" id="search-input" placeholder="Search by name or breed...">
+                <button aria-label="search bar" class="search-btn" onclick="searchPets()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Animal Type</label>
+                    <select class="filter-select" id="type-filter" onchange="filterPets()">
+                        <option value="all">All Types</option>
+                        <option value="dog">Dogs</option>
+                        <option value="cat">Cats</option>
+                        <option value="rabbit">Rabbits</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select class="filter-select" id="price-filter" onchange="filterPetsByPrice()">
+                        <option value="all">All Prices</option>
+                        <option value="0-100">$0 - $100</option>
+                        <option value="100-500">$100 - $500</option>
+                        <option value="500-1000">$500 - $1000</option>
+                        <option value="1000-1500">$1000 - $1500</option>
+                        <option value="1500+">$1500+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort By</label>
+                    <select class="filter-select" id="sort-filter" onchange="sortPets()">
+                        <option value="name">Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="clearFilters()">
+                    <i class="fas fa-refresh"></i>
+                    Clear Filters
+                </button>
+            </div>
+        </div>
+
+        <!-- Pet Grid -->
+        <div class="pet-grid" id="pet-grid">
+            <!-- Pets will be loaded here -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <i class="fas fa-store-slash"></i>
+            <h3>No pets found</h3>
+            <p>Try adjusting your search criteria or filters</p>
+            <button class="btn btn-primary" onclick="clearFilters()">Clear All Filters</button>
+        </div>
+    </div>
+</main>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="container">
+        <h2 class="section-title">Why Choose Our Pets?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-heart-pulse feature-icon"></i>
+                <h3>Health Guaranteed</h3>
+                <p>All our pets come with comprehensive health certificates and vaccination records</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-certificate feature-icon"></i>
+                <h3>Certified Breeders</h3>
+                <p>We work only with licensed, reputable breeders who follow ethical practices</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-handshake feature-icon"></i>
+                <h3>Lifetime Support</h3>
+                <p>Get ongoing support and advice for the lifetime of your pet</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt feature-icon"></i>
+                <h3>30-Day Guarantee</h3>
+                <p>If you're not completely satisfied, we offer a 30-day return guarantee</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bg-text">NIFTY PETS</div>
+    <div class="footer-container container">
+        <div class="footer-col">
+            <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+            <p>Connecting loving homes with pets in need since 2010.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/AJ Arjun" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/arjunam_38" aria-label="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/@AJArjun26559680" aria-label="x" target="_blank"><i class="fab fa-x"></i></a>
+                <a href="https://www.youtube.com/@arjunaj-e7l" aria-label="youtube" target="_blank"><i class="fab fa-youtube"></i></a>    
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoption.html">Adoption Process</a></li>
+                <li><a href="sales.html">Available Pets</a></li>
+                <li><a href="about.html">Our Story</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> 
+                    <a href="https://www.google.com/maps?q=123+Pet+Street,+Animal+City" target="_blank">
+                        123 Pet Street, Animal City
+                    </a>
+                </li>
+                <li><i class="fas fa-phone"></i> 
+                    <a href="tel:+11234567890">(123) 456-7890</a>
+                </li>
+                <li><i class="fas fa-envelope"></i> 
+                    <a href="mailto:info@niftypets.com">info@niftypets.com</a>
+                </li>
+                <li><i class="fas fa-clock"></i> Mon-Sat: 9AM - 6PM</li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Nifty Pets. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Shopping Cart Modal -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+
+<!-- Notification Container -->
+<div id="notification-container"></div>
+
+<!-- Pet Details Modal -->
+<div id="pet-details-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="pet-modal-name">Pet Details</h2>
+            <button class="close-btn" onclick="closePetDetails()">&times;</button>
+        </div>
+        <div class="pet-details-content" id="pet-details-content">
+            <!-- Pet details will be loaded here -->
+        </div>
+        <div class="modal-actions">
+            <button class="btn btn-secondary" onclick="closePetDetails()">Close</button>
+            <button class="btn btn-primary" id="add-to-cart-modal-btn">
+                <i class="fas fa-cart-plus"></i>
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

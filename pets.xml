@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pets>
+    <pet id="1">
+        <name>Max</name>
+        <breed>Golden Retriever</breed>
+        <age>1 year</age>
+        <description>Friendly and energetic, loves to play fetch. Max is great with kids and other pets. He's house-trained and knows basic commands.</description>
+        <image>assets/images/dog1.jpg</image>
+        <health>Vaccinated, neutered, good health</health>
+        <type>dog</type>
+    </pet>
+    <pet id="2">
+        <name>Bella</name>
+        <breed>Labrador</breed>
+        <age>2 years</age>
+        <description>Gentle and loving, great with kids. Bella is a perfect family dog who enjoys long walks and cuddles on the couch.</description>
+        <image>assets/images/bella.jpeg</image>
+        <health>Vaccinated, spayed, good health</health>
+        <type>dog</type>
+    </pet>
+    <pet id="3">
+        <name>Luna</name>
+        <breed>Siamese Cat</breed>
+        <age>10 months</age>
+        <description>Playful and curious, loves attention. Luna is very social and will follow you around the house. She gets along with other cats.</description>
+        <image>assets/images/cat1.jpg</image>
+        <health>Vaccinated, spayed, good health</health>
+        <type>cat</type>
+    </pet>
+    <pet id="4">
+        <name>Charlie</name>
+        <breed>Rabbit</breed>
+        <age>8 months</age>
+        <description>Calm and friendly, loves carrots. Charlie is litter-trained and enjoys exploring safe spaces in your home.</description>
+        <image>assets/images/rabbit1.jpg</image>
+        <health>Vaccinated, good health</health>
+        <type>rabbit</type>
+    </pet>
+    <pet id="5">
+        <name>Rocky</name>
+        <breed>German Shepherd</breed>
+        <age>3 years</age>
+        <description>Loyal and protective, needs experienced owner. Rocky is highly intelligent and responds well to training.</description>
+        <image>assets/images/german-shepherd.jpg</image>
+        <health>Vaccinated, neutered, good health</health>
+        <type>dog</type>
+    </pet>
+    <pet id="6">
+        <name>Molly</name>
+        <breed>Pomeranian</breed>
+        <age>4 years</age>
+        <description>Small but full of personality, loves cuddles. Molly is perfect for apartment living and enjoys short walks.</description>
+        <image>assets/images/pomerian.jpg</image>
+        <health>Vaccinated, spayed, good health</health>
+        <type>dog</type>
+    </pet>
+    <pet id="7">
+        <name>Simba</name>
+        <breed>Maine Coon</breed>
+        <age>1 year</age>
+        <description>Large and affectionate, with a gentle temperament. Simba enjoys playing and lounging around the house.</description>
+        <image>assets/images/simba.jpg</image>
+        <health>Vaccinated, neutered, good health</health>
+        <type>cat</type>
+    </pet>
+    <pet id="8">
+        <name>Daisy</name>
+        <breed>Holland Lop Rabbit</breed>
+        <age>7 months</age>
+        <description>Small, adorable, and loves gentle petting. Daisy enjoys fresh vegetables and quiet spaces.</description>
+        <image>assets/images/daisy.jpg</image>
+        <health>Vaccinated, good health</health>
+        <type>rabbit</type>
+    </pet>
+    <pet id="9">
+        <name>Cooper</name>
+        <breed>Beagle</breed>
+        <age>2 years</age>
+        <description>Playful and friendly, with a great sense of smell. Cooper loves outdoor adventures and exploring trails.</description>
+        <image>assets/images/cooper.jpg</image>
+        <health>Vaccinated, neutered, good health</health>
+        <type>dog</type>
+    </pet>
+    <pet id="10">
+        <name>Misty</name>
+        <breed>Persian Cat</breed>
+        <age>9 months</age>
+        <description>Calm and elegant, with a long silky coat. Misty enjoys quiet environments and gentle affection.</description>
+        <image>assets/images/misty.jpg</image>
+        <health>Vaccinated, spayed, good health</health>
+        <type>cat</type>
+    </pet>
+    <pet id="11">
+        <name>Thumper</name>
+        <breed>Mini Rex Rabbit</breed>
+        <age>1 year</age>
+        <description>Soft fur and playful personality. Thumper is litter-trained and great for indoor living.</description>
+        <image>assets/images/thumper.jpg</image>
+        <health>Vaccinated, good health</health>
+        <type>rabbit</type>
+    </pet>
+    <pet id="12">
+        <name>Oscar</name>
+        <breed>Border Collie</breed>
+        <age>3 years</age>
+        <description>Highly intelligent and energetic. Oscar excels at learning tricks and loves agility training.</description>
+        <image>assets/images/oscar.png</image>
+        <health>Vaccinated, neutered, good health</health>
+        <type>dog</type>
+    </pet>
+</pets>

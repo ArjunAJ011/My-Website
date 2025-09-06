@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pets>
+    <pet id="1">
+        <name>Buddy</name>
+        <breed>Golden Retriever</breed>
+        <price>1200</price>
+        <description>Purebred with pedigree papers, excellent temperament. Buddy comes from champion bloodlines and has been socialized with people and other pets.</description>
+        <image>assets/images/dog7.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>10 weeks</age>
+        <type>dog</type>
+    </pet>
+    <pet id="2">
+        <name>Daisy</name>
+        <breed>Beagle</breed>
+        <price>950</price>
+        <description>Sweet and playful, great family dog. Daisy has a wonderful nose and loves to explore. She's perfect for active families.</description>
+        <image>assets/images/beagle.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>12 weeks</age>
+        <type>dog</type>
+    </pet>
+    <pet id="3">
+        <name>Milo</name>
+        <breed>Siamese Cat</breed>
+        <price>600</price>
+        <description>Beautiful blue eyes, very affectionate. Milo is a traditional Siamese with striking markings and a loving personality.</description>
+        <image>assets/images/cat2.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>14 weeks</age>
+        <type>cat</type>
+    </pet>
+    <pet id="4">
+        <name>Snowball</name>
+        <breed>White Rabbit</breed>
+        <price>80</price>
+        <description>Fluffy and friendly, comes with cage. Snowball is litter-trained and enjoys fresh vegetables as treats.</description>
+        <image>assets/images/rabbit4.jpg</image>
+        <health>Vet checked</health>
+        <age>4 months</age>
+        <type>rabbit</type>
+    </pet>
+    <pet id="5">
+        <name>Rex</name>
+        <breed>Rottweiler</breed>
+        <price>1500</price>
+        <description>Strong and loyal, from champion bloodline. Rex has an excellent pedigree and shows great potential as a family protector.</description>
+        <image>assets/images/Rotweiler.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>12 weeks</age>
+        <type>dog</type>
+    </pet>
+    <pet id="6">
+        <name>Lola</name>
+        <breed>Shih Tzu</breed>
+        <price>850</price>
+        <description>Sweet and gentle, perfect lap dog. Lola has a beautiful coat and loves to be pampered. Great for apartment living.</description>
+        <image>assets/images/sitzu.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>10 weeks</age>
+        <type>dog</type>
+    </pet>
+    <pet id="7">
+        <name>Whiskers</name>
+        <breed>Maine Coon</breed>
+        <price>750</price>
+        <description>Large, gentle, and friendly. Whiskers has a luxurious coat and a calm personality, making him great with children.</description>
+        <image>assets/images/whiskers.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>16 weeks</age>
+        <type>cat</type>
+    </pet>
+    <pet id="8">
+        <name>Bella</name>
+        <breed>Holland Lop Rabbit</breed>
+        <price>95</price>
+        <description>Small, adorable, and gentle. Bella enjoys cuddles and is easy to handle, making her perfect for first-time rabbit owners.</description>
+        <image>assets/images/bella.jpg</image>
+        <health>Vet checked</health>
+        <age>3 months</age>
+        <type>rabbit</type>
+    </pet>
+    <pet id="9">
+        <name>Max</name>
+        <breed>German Shepherd</breed>
+        <price>1300</price>
+        <description>Highly intelligent and protective. Max is eager to learn and would excel in training or as a family guardian.</description>
+        <image>assets/images/german.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>11 weeks</age>
+        <type>dog</type>
+    </pet>
+    <pet id="10">
+        <name>Luna</name>
+        <breed>Persian Cat</breed>
+        <price>850</price>
+        <description>Elegant and calm, with a beautiful long coat. Luna loves a peaceful environment and is very affectionate with her family.</description>
+        <image>assets/images/luna.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>15 weeks</age>
+        <type>cat</type>
+    </pet>
+    <pet id="11">
+        <name>Oliver</name>
+        <breed>Mini Rex Rabbit</breed>
+        <price>85</price>
+        <description>Soft, velvety fur and a curious nature. Oliver is friendly and easy to litter-train, perfect for indoors.</description>
+        <image>assets/images/oliver.jpg</image>
+        <health>Vet checked</health>
+        <age>5 months</age>
+        <type>rabbit</type>
+    </pet>
+    <pet id="12">
+        <name>Charlie</name>
+        <breed>Labrador Retriever</breed>
+        <price>1100</price>
+        <description>Friendly, energetic, and loyal. Charlie loves playing fetch and swimming, ideal for active families.</description>
+        <image>assets/images/charlie.jpg</image>
+        <health>Vaccinated, dewormed, vet checked</health>
+        <age>13 weeks</age>
+        <type>dog</type>
+    </pet>
+</pets>
